@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'screens/adopt_me_screen.dart';
-
 import 'screens/pet_profile_screen.dart';
 import 'themes/adopt_me_theme.dart';
-//import 'screens/pet_profile_screen.dart';
+
 
 void main() {
   runApp(const AdoptMe());

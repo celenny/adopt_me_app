@@ -1,16 +1,20 @@
-# adopt_me_app
+# Pet Challenge
 
-A new Flutter project.
+O desafio é reproduzir o mockup abaixo, respeitando o espaçamento, curvas, fontes, etc.  
+Não é necessário usar as mesmas imagens e textos, mas devem estar na mesma proporção.  
 
-## Getting Started
+Deve ser colocado esse [linter](https://pub.dev/packages/flutterando_analysis)
 
-This project is a starting point for a Flutter application.
+Tela 1    | Tela 2
+:-------: | :-------:
+![Mockup!](/.readme_assets/pet_mockup01.png "Mockup 01") | ![Mockup!](/.readme_assets/pet_mockup02.png "Mockup 02")
 
-A few resources to get you started if this is your first Flutter project:
+## Critério de avaliação
+  * Componentização
+  * Fidelidade ao mockup
+  * Responsividade
+  * Boas práticas
+  * Git/GitHub
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Mockup
+https://dribbble.com/shots/11779683-PET-ADOPTION-APP/attachments/3403695?mode=media
