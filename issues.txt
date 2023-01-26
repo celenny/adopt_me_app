@@ -1,0 +1,70 @@
+1 - 
+O primeiro passo é configurar o tema
+
+Cores
+Assets
+Fonts/TextStyles
+Links uteis
+
+ThemeData
+Uso do Theme
+Cores no Material Design
+Tipografia no Material Design
+InheritedWidget
+
+2
+Antes de fazer a tela, é importante ler o mockup e identificar e criar os widgets
+
+Veja o mockup
+Analise
+Ao pensar se vale a pena criar o widget, responda essas perguntas
+
+Se repete?
+Seria bom estar em uma classe diferente?
+Depois de analisar
+
+Construa os widgets
+
+
+
+3
+Agora com os widgets já feitos, monte a primeira tela.
+Deve ser utilizado Slivers.
+
+Atente-se a:
+
+Cores
+Espaçamento
+Estilo de texto
+
+
+Slivers
+Meetup sobre Slivers
+
+
+4
+Antes de fazer a tela, é importante ler o mockup e identificar e criar os widgets
+
+Veja o mockup
+Analise
+Ao pensar se vale a pena criar o widget, responda essas perguntas
+
+Se repete?
+Seria bom estar em uma classe diferente?
+Depois de analisar
+
+Construa os widgets
+
+5
+Agora com os widgets já feitos, monte a segunda tela.
+
+Atente-se a:
+
+Cores
+Espaçamento
+Estilo de texto
+
+6 links uteis
+[Responsive Dashboard](https://www.youtube.com/watch?v=9bo1V9STW2c&t=790s)
+[Responsive and adaptative](https://docs.flutter.dev/development/ui/layout/adaptive-responsive)
+[Responsive layout](https://www.youtube.com/watch?v=MrPJBAOzKTQ)
