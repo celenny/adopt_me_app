@@ -63,7 +63,7 @@ class AdoptMeBody extends StatelessWidget {
         Container(
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.vertical(
-              top: Radius.circular(20.0),
+              top: Radius.circular(20),
             ),
             color: AdoptMeColors.lightGrey,
           ),
@@ -80,7 +80,7 @@ class AdoptMeBody extends StatelessWidget {
                         width: 10,
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8),
                         child: Container(
                           height: 50,
                           width: 51,
@@ -95,7 +95,7 @@ class AdoptMeBody extends StatelessWidget {
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8),
                         child: FilterItemWidget(
                           name: 'Dogs',
                           icon: MdiIcons.dog,
@@ -103,7 +103,7 @@ class AdoptMeBody extends StatelessWidget {
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8),
                         child: FilterItemWidget(
                           name: 'Cats',
                           icon: MdiIcons.cat,
@@ -111,7 +111,7 @@ class AdoptMeBody extends StatelessWidget {
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8),
                         child: FilterItemWidget(
                           name: 'Birds',
                           icon: MdiIcons.cat,
@@ -119,7 +119,7 @@ class AdoptMeBody extends StatelessWidget {
                         ),
                       ),
                       const Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8),
                         child: FilterItemWidget(
                           name: 'Rabbits',
                           icon: MdiIcons.rabbitVariant,
@@ -153,7 +153,7 @@ class AdoptMeBody extends StatelessWidget {
                     localization: lt.localization,
                   );
                 }).toList(),
-              )),
+              ),),
         ),
       ],
     );

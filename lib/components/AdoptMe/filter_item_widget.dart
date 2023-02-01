@@ -27,10 +27,10 @@ class FilterItemWidget extends StatelessWidget {
         children: <Widget>[
           Icon(
             icon,
-            size: 27.0,
+            size: 27,
             color: isSelected ? AdoptMeColors.white : AdoptMeColors.grey,
           ),
-          const SizedBox(width: 12.0),
+          const SizedBox(width: 12),
           Text(
             name,
             style: TextStyle(

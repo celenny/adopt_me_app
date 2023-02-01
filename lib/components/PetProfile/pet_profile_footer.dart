@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -11,7 +10,6 @@ class PetProfileFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 70,
-      width: 60,
       decoration: const BoxDecoration(
         color: AdoptMeColors.coralRed,
         borderRadius: BorderRadius.only(
@@ -24,24 +22,30 @@ class PetProfileFooter extends StatelessWidget {
         padding: const EdgeInsets.only(
           left: 50,
         ),
-        child: Row(children: const [
-          Icon(
-            MdiIcons.paw,
-            size: 30,
-            color: AdoptMeColors.white,
-          ),
-          SizedBox(
-            width: 15,
-          ),
-          Text(
-            'ADOPT ME',
-            style: TextStyle(
-              fontSize: 22,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: const [
+            Icon(
+              MdiIcons.paw,
+              size: 30,
               color: AdoptMeColors.white,
-              fontWeight: FontWeight.bold,
             ),
-          )
-        ]),
+            Padding(
+              padding: EdgeInsets.only(left: 8),
+              child: Text(
+                'ADOPT ME',
+                style: TextStyle(
+                  fontSize: 22,
+                  color: AdoptMeColors.white,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            SizedBox(
+              width: 40,
+            ),
+          ],
+        ),
       ),
     );
   }

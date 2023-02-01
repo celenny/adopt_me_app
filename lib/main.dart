@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'screens/pet_profile_screen.dart';
 import 'themes/adopt_me_theme.dart';
 
-
 void main() {
   runApp(const AdoptMe());
 }

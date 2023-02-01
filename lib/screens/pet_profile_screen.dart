@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import '../components/PetProfile/pet_profile_app_bar.dart';
 import '../components/PetProfile/pet_profile_body.dart';
-import '../components/PetProfile/pet_profile_footer.dart';
+//import '../components/PetProfile/pet_profile_footer.dart';
+//import '../components/PetProfile/pet_profile_footer.dart';
 import '../components/custom_app_bar.dart';
 
 class PetProfileScreen extends StatelessWidget {
@@ -18,11 +19,15 @@ class PetProfileScreen extends StatelessWidget {
         name: 'Akira',
         breed: 'Golden Retriver',
         age: '8 months old',
+        localization: '2.5 kms away',
         isFemale: true,
         mainImagePath: 'assets/images/akira2.png',
         petProfileImagePath: 'assets/images/akira1.png',
       ),
-      bottomNavigationBar: PetProfileFooter(),
+      /*bottomSheet: Align(
+        alignment: Alignment.bottomRight,
+        child: PetProfileFooter(),
+      ),*/
     );
   }
 }

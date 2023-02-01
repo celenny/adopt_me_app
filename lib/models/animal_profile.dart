@@ -21,5 +21,5 @@ class AnimalProfile {
       required this.color,
       required this.icon,
       required this.isSelected,
-      required this.localization});
+      required this.localization,});
 }

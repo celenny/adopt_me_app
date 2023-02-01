@@ -25,7 +25,7 @@ class PetProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
           const Icon(
             //MdiIcons.angleRight,
             FontAwesomeIcons.angleLeft,
-            size: 45,
+            size: 40,
             color: AdoptMeColors.blueGrey,
           ),
           Container(

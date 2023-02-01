@@ -11,7 +11,9 @@ class AdoptMeScreen extends StatelessWidget {
     return Scaffold(
       appBar: const CustomAppBar(
         height: 130,
-        child: AdoptMeAppBar(),
+        child: SafeArea(
+          child: AdoptMeAppBar(),
+        ),
       ),
       body: AdoptMeBody(),
     );

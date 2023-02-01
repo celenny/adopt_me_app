@@ -126,7 +126,7 @@ class BoxAnimalProfile extends StatelessWidget {
                   Text(
                     localization,
                     style: const TextStyle(
-                        fontWeight: FontWeight.normal, fontSize: 14),
+                        fontWeight: FontWeight.normal, fontSize: 14,),
                   ),
                 ],
               ),

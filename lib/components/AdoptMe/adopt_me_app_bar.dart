@@ -9,44 +9,48 @@ class AdoptMeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        const Icon(
-          FontAwesomeIcons.bars,
-          color: AdoptMeColors.blueGrey,
-          size: 29.0,
-        ),
-        Padding(
-          padding: const EdgeInsets.all(45.0),
-          child: Column(
-            children: const <Widget>[
-              Text('Location',
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          const Icon(
+            FontAwesomeIcons.bars,
+            color: AdoptMeColors.blueGrey,
+            size: 29,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 12,
+            ),
+            child: Column(
+              children: const <Widget>[
+                Text('Location',
+                    style: TextStyle(
+                      fontFamily: 'Roboto',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: AdoptMeColors.grey,
+                    ),),
+                SizedBox(height: 4),
+                Text(
+                  'Cameron St., Boston',
                   style: TextStyle(
                     fontFamily: 'Roboto',
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                    color: AdoptMeColors.grey,
-                  )),
-              SizedBox(height: 4.0),
-              Text(
-                'Cameron St., Boston',
-                style: TextStyle(
-                  fontFamily: 'Roboto',
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: AdoptMeColors.darkGrey,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: AdoptMeColors.darkGrey,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-        const CircleAvatar(
-          backgroundImage: AssetImage('assets/images/patricia.png'),
-          radius: 24.0,
-        ),
-      ],
+          const CircleAvatar(
+            backgroundImage: AssetImage('assets/images/patricia.png'),
+            radius: 24,
+          ),
+        ],
+      ),
     );
   }
 }
