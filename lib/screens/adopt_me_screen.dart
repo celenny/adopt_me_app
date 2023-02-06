@@ -1,6 +1,7 @@
+import 'package:adopt_me_app/components/adopt_me/adopt_me_body.dart';
 import 'package:flutter/material.dart';
-import '../components/AdoptMe/adopt_me_app_bar.dart';
-import '../components/AdoptMe/adopt_me_body.dart';
+
+import '../components/adopt_me/adopt_me_app_bar.dart';
 import '../components/custom_app_bar.dart';
 
 class AdoptMeScreen extends StatelessWidget {

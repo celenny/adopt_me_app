@@ -1,13 +1,23 @@
-import 'package:adopt_me_app/components/PetProfile/pet_profile_footer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import '../../themes/adopt_me_colors.dart';
+import 'animal_main_picture.dart';
 import 'box_animal_picture.dart';
+import 'pet_profile_footer.dart';
 
 //TODO: LISTA COMPONENTIZAR POR CAUSA DO GRADIENTE E DEIXAR DINAMICO LISTVIEW.BUILDER OU SEPARETED
 
 class PetProfileBody extends StatelessWidget {
+  final _imageList = [
+    'assets/images/akira2.png',
+    'assets/images/akira3.png',
+    'assets/images/akira4.png',
+    'assets/images/akira5.png',
+    'assets/images/akira6.png',
+    'assets/images/akira7.png',
+  ];
+
   final String name;
   final String breed;
   final String age;
@@ -16,7 +26,7 @@ class PetProfileBody extends StatelessWidget {
   final String mainImagePath;
   final String petProfileImagePath;
 
-  const PetProfileBody({
+  PetProfileBody({
     Key? key,
     required this.name,
     required this.breed,
@@ -110,55 +120,29 @@ class PetProfileBody extends StatelessWidget {
               ],
             ),
           ),
+          //TODO: LISTA COMPONENTIZAR POR CAUSA DO GRADIENTE E DEIXAR DINAMICO LISTVIEW.BUILDER OU SEPARETED
           Row(
-            //TODO: LISTA COMPONENTIZAR POR CAUSA DO GRADIENTE E DEIXAR DINAMICO LISTVIEW.BUILDER OU SEPARETED
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8),
-                child: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Column(
-                    children: <Widget>[
-                      BoxAnimalPicture(image: petProfileImagePath),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      BoxAnimalPicture(image: petProfileImagePath),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      BoxAnimalPicture(image: petProfileImagePath),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      BoxAnimalPicture(image: petProfileImagePath),
-                    ],
-                  ),
+              const SizedBox(
+                width: 10,
+              ),
+              SizedBox(
+                height: 240,
+                width: 80,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: _imageList.length,
+                  itemBuilder: (context, index) {
+                    return BoxAnimalPicture(
+                      image: _imageList[index],
+                    );
+                  },
                 ),
               ),
-              Expanded(
-                child: Stack(
-                  children: [
-                    Container(
-                      height: 290,
-                      width: 280,
-                      decoration: BoxDecoration(
-                        color: AdoptMeColors.akira,
-                        borderRadius: BorderRadius.circular(150),
-                      ),
-                    ),
-                    Positioned(
-                      left: -80,
-                      //right: -100,
-                      child: Container(
-                        height: 290,
-                        width: 400,
-                        alignment: Alignment.centerRight,
-                        child: Image.asset(mainImagePath),
-                      ),
-                    ),
-                  ],
-                ),
+              Align(
+                alignment: Alignment.topRight,
+                child: AnimalMainPicture(mainImagePath: mainImagePath),
               ),
             ],
           ),
