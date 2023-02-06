@@ -130,7 +130,7 @@ class PetProfileBody extends StatelessWidget {
               SizedBox(
                 height: 240,
                 width: 80,
-                child: ListView.builder(
+                child: ListView.separated(
                   shrinkWrap: true,
                   itemCount: _imageList.length,
                   itemBuilder: (context, index) {
@@ -138,6 +138,8 @@ class PetProfileBody extends StatelessWidget {
                       image: _imageList[index],
                     );
                   },
+                  separatorBuilder: (BuildContext context, int index) =>
+                      const Divider(),
                 ),
               ),
               Align(
@@ -164,7 +166,7 @@ class PetProfileBody extends StatelessWidget {
                 ),
                 Text(
                   '''
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsumMany desktop publishing packages.''',
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum Many desktop publishing packages and web page editors now use.''',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     color: AdoptMeColors.grey,
