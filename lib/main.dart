@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'screens/adopt_me_screen.dart';
+import 'screens/adopt_me_screen.dart';
 import 'components/pet_profile/list_animal.dart';
 import 'screens/pet_profile_screen.dart';
 import 'themes/adopt_me_theme.dart';
@@ -17,8 +17,8 @@ class AdoptMe extends StatelessWidget {
       title: 'AdoptMe',
       debugShowCheckedModeBanner: false,
       theme: adoptMeTheme,
-      //home: const AdoptMeScreen(),
-      home: const PetProfileScreen(),
+      home: const AdoptMeScreen(),
+      //home: const PetProfileScreen(),
       //home: AnimalList(),
     );
   }

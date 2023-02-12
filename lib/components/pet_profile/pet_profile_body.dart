@@ -11,11 +11,11 @@ import 'pet_profile_footer.dart';
 class PetProfileBody extends StatelessWidget {
   final _imageList = [
     'assets/images/akira2.png',
-    'assets/images/akira3.png',
-    'assets/images/akira4.png',
-    'assets/images/akira5.png',
-    'assets/images/akira6.png',
     'assets/images/akira7.png',
+    'assets/images/akira5.png',
+    'assets/images/akira4.png',
+    'assets/images/akira6.png',
+    'assets/images/akira3.png',
   ];
 
   final String name;

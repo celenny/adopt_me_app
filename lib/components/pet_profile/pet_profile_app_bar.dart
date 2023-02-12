@@ -22,11 +22,14 @@ class PetProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Icon(
-            //MdiIcons.angleRight,
-            FontAwesomeIcons.angleLeft,
-            size: 40,
-            color: AdoptMeColors.blueGrey,
+          IconButton(
+            onPressed: () => Navigator.of(context).pop(),
+            icon: const Icon(
+              //MdiIcons.angleRight,
+              FontAwesomeIcons.angleLeft,
+              size: 40,
+              color: AdoptMeColors.blueGrey,
+            ),
           ),
           Container(
             height: 45,

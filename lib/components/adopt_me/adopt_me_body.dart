@@ -1,3 +1,4 @@
+import 'package:adopt_me_app/screens/pet_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -135,9 +136,16 @@ class AdoptMeBody extends StatelessWidget {
         ),
         Expanded(
           child: Container(
-              height: 680,
-              decoration: const BoxDecoration(
-                color: AdoptMeColors.lightGrey,
+            height: 680,
+            decoration: const BoxDecoration(
+              color: AdoptMeColors.lightGrey,
+            ),
+            child: InkWell(
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PetProfileScreen(),
+                ),
               ),
               child: ListView(
                 children: _listAnimalProfile.map((lt) {
@@ -153,7 +161,9 @@ class AdoptMeBody extends StatelessWidget {
                     localization: lt.localization,
                   );
                 }).toList(),
-              ),),
+              ),
+            ),
+          ),
         ),
       ],
     );
