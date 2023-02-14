@@ -148,35 +148,38 @@ class PetProfileBody extends StatelessWidget {
               ),
             ],
           ),
-          Container(
-            padding: const EdgeInsets.all(10),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const <Widget>[
-                Text(
-                  'About',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: Container(
+              padding: const EdgeInsets.all(17),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const <Widget>[
+                  Text(
+                    'About',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                    textAlign: TextAlign.start,
                   ),
-                  textAlign: TextAlign.start,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  '''
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    '''
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum Many desktop publishing packages and web page editors now use.''',
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(
-                    color: AdoptMeColors.grey,
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      color: AdoptMeColors.grey,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(top: 8),
+            padding: EdgeInsets.only(top: 80),
             child: Align(
               alignment: Alignment.bottomRight,
               child: PetProfileFooter(),

@@ -144,7 +144,7 @@ class AdoptMeBody extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => PetProfileScreen(),
+                  builder: (context) => const PetProfileScreen(),
                 ),
               ),
               child: ListView(

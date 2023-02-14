@@ -9,7 +9,7 @@ class PetProfileFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
+      height: 60,
       decoration: const BoxDecoration(
         color: AdoptMeColors.coralRed,
         borderRadius: BorderRadius.only(
