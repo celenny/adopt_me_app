@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'screens/adopt_me_screen.dart';
-import 'components/pet_profile/list_animal.dart';
-import 'screens/pet_profile_screen.dart';
 import 'themes/adopt_me_theme.dart';
 
 void main() {

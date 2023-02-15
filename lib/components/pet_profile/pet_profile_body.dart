@@ -4,9 +4,8 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import '../../themes/adopt_me_colors.dart';
 import 'animal_main_picture.dart';
 import 'box_animal_picture.dart';
+import 'gradiente.dart';
 import 'pet_profile_footer.dart';
-
-//TODO: LISTA COMPONENTIZAR POR CAUSA DO GRADIENTE E DEIXAR DINAMICO LISTVIEW.BUILDER OU SEPARETED
 
 class PetProfileBody extends StatelessWidget {
   final _imageList = [
@@ -127,20 +126,28 @@ class PetProfileBody extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              SizedBox(
-                height: 240,
-                width: 80,
-                child: ListView.separated(
-                  shrinkWrap: true,
-                  itemCount: _imageList.length,
-                  itemBuilder: (context, index) {
-                    return BoxAnimalPicture(
-                      image: _imageList[index],
-                    );
-                  },
-                  separatorBuilder: (BuildContext context, int index) =>
-                      const Divider(),
-                ),
+              Stack(
+                children: [
+                  SizedBox(
+                    height: 240,
+                    width: 80,
+                    child: ListView.separated(
+                      shrinkWrap: true,
+                      itemCount: _imageList.length,
+                      itemBuilder: (context, index) {
+                        return BoxAnimalPicture(
+                          image: _imageList[index],
+                        );
+                      },
+                      separatorBuilder: (BuildContext context, int index) =>
+                          const Divider(),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 225),
+                    child: gradient(),
+                  ),
+                ],
               ),
               Align(
                 alignment: Alignment.topRight,
