@@ -119,7 +119,6 @@ class PetProfileBody extends StatelessWidget {
               ],
             ),
           ),
-          //TODO: LISTA COMPONENTIZAR POR CAUSA DO GRADIENTE E DEIXAR DINAMICO LISTVIEW.BUILDER OU SEPARETED
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

@@ -18,5 +18,5 @@ Container gradient() {
         ),
       ),
     );
-  }
+}
   

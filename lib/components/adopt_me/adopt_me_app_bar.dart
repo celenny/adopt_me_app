@@ -21,17 +21,19 @@ class AdoptMeAppBar extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(
-              top: 12,
+              top: 25,
             ),
             child: Column(
               children: const <Widget>[
-                Text('Location',
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: AdoptMeColors.grey,
-                    ),),
+                Text(
+                  'Location',
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: AdoptMeColors.grey,
+                  ),
+                ),
                 SizedBox(height: 4),
                 Text(
                   'Cameron St., Boston',
